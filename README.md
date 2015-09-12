@@ -21,7 +21,7 @@ Next cd into the repo and run:
 
 Now you are ready to build the app, first clean out the build directory using:
 
-'grunt clean'
+`grunt clean`
 
 then build it:
 
