@@ -69,11 +69,11 @@
 
 },{}],4:[function(require,module,exports){
 (function() {
-  var TitleBar, div, h1, p, _ref, _ref1,
+  var TitleBar, a, div, h1, _ref, _ref1,
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
-  _ref = React.DOM, div = _ref.div, p = _ref.p, h1 = _ref.h1;
+  _ref = React.DOM, div = _ref.div, a = _ref.a, h1 = _ref.h1;
 
   TitleBar = (function(_super) {
     var _this = this;
@@ -94,7 +94,10 @@
     TitleBar.prototype.render = function() {
       return div({
         id: 'title_bar'
-      }, h1({}, 'This is the title text'));
+      }, a({
+        id: 'title',
+        href: '#'
+      }, h1({}, 'Liam.Krewer.me')));
     };
 
     return TitleBar;

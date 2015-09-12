@@ -1,5 +1,5 @@
 # Renders a list of history entries
-{ div, p, h1 } = React.DOM
+{ div, a, h1 } = React.DOM
 
 class TitleBar extends React.Component
   @propTypes:
@@ -7,6 +7,7 @@ class TitleBar extends React.Component
 
   render: ->
     div { id: 'title_bar'},
-      h1 {}, 'This is the title text'
+      a {id: 'title', href: '#'},
+        h1 {}, 'Liam.Krewer.me'
 
 module.exports = React.createFactory(TitleBar)

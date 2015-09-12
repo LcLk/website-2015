@@ -1,1 +1,18 @@
+=_reset_link
+  text-decoration: none
+  cursor: pointer
+  font-size: $base-font-size
+  font-family: $font
+  color: #000
+
+
+=reset_link()
+  &:visited
+    @include _reset_link
+  &:active
+    @include _reset_link 
+  &:hover
+    @include _reset_link
+  &:link
+    @include _reset_link
 
