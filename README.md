@@ -12,15 +12,21 @@ Pre-requisites
 
 
 Then you can install the grunt cli tool:
+
 `sudo npm install grunt-cli -g`
 
 Next cd into the repo and run:
+
 `npm install`
 
 Now you are ready to build the app, first clean out the build directory using:
+
 'grunt clean'
+
 then build it:
+
 `grunt build`
+
 Now you can open the app in your browser. The file is `build/index.html`
 
 
