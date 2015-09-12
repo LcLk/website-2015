@@ -1,0 +1,32 @@
+{
+  "name": "caffeine",
+  "version": "0.0.1",
+  "description": "trying out grunt, coffee and react for a SPA app",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "liam",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-coffee": "0.7.x",
+    "grunt-contrib-jshint": "0.6.x",
+    "grunt-contrib-uglify": "0.2.x",
+    "grunt-contrib-watch": "0.5.x",
+    "grunt-contrib-clean": "0.5.x",
+    "grunt-contrib-copy": "0.4.x",
+    "grunt-contrib-cssmin": "0.6.x",
+    "grunt-browserify": "~4.0",
+    "coffee-script": "~1.10.0",
+    "react": "~0.13.3",
+    "reflux": "~0.2",
+    "browserify": "~11.1.0",
+    "lodash": "~3.10.1",
+    "grunt-contrib-sass": "~0.9.2"
+  }
+}
