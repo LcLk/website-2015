@@ -4,19 +4,26 @@ class MainMenu extends React.Component
   @propTypes:
     expanded: React.PropTypes.bool
 
-  defaultProps:
+  @defaultProps:
     expanded: false
+  
+  constructor: ->
+    @state = 
+      expanded: false
 
   toggleMenu: (e) =>
     console.log 'clicked', e
-    @expanded = !@expanded
+    console.log @state
+    @setState(expanded: !@state.expanded)
     true
 
   render: ->
-    div { id: 'menu-container'},
+    console.log 'a'
+    console.log classNames {expanded: @state.expanded}
+    div { id: 'menu-container', className: classNames {expanded: @state.expanded}},
       div {className: 'menu-button-container'},
         div { className: 'menu-button', onClick: @toggleMenu },
           span {}, 'Menu' 
-        div { id: 'main-menu', className: (@expanded ? 'show' : 'hide' )}
+        div { id: 'main-menu' }
 
 module.exports = React.createFactory(MainMenu)
