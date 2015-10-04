@@ -83,8 +83,6 @@
     }
 
     MainMenu.prototype.toggleMenu = function(e) {
-      console.log('clicked', e);
-      console.log(this.state);
       this.setState({
         expanded: !this.state.expanded
       });
@@ -92,10 +90,6 @@
     };
 
     MainMenu.prototype.render = function() {
-      console.log('a');
-      console.log(classNames({
-        expanded: this.state.expanded
-      }));
       return div({
         id: 'menu-container',
         className: classNames({
@@ -106,9 +100,9 @@
       }, div({
         className: 'menu-button',
         onClick: this.toggleMenu
-      }, span({}, 'Menu')), div({
-        id: 'main-menu'
-      })));
+      }, span({}, 'Menu'))), div({
+        className: 'main-menu'
+      }));
     };
 
     return MainMenu;

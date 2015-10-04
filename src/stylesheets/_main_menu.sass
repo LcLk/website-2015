@@ -23,16 +23,39 @@
   right: 10px
   .menu-button-container
     z-index: 100
+    position: absolute
+    top: 0
+    right: 10px
     .menu-button
       +leaf
-      transition: all 0.5s
+      transition: all 0.25s
     &:hover:before
       +leaf
       +pulse-animation
       background-color: white
-  &.open
+  .main-menu
+    position: absolute
+    border-radius: 50px 10px 0 0
+    top: 10px
+    right: 10px
+    height: 0
+    z-index: 50
+    transition: all 0.5s
+    width: 112px
+    padding: 0 10px
+    background-color: white
+    opacity: 0
+  &.expanded
     .menu-button-container
+      &:hover:before 
+        animation: none
       .menu-button
-      border-radius: 0 0
+        border-radius: 0 0
+    .main-menu
+      height: 400px
+      opacity: 1
+
+
+
 
       
