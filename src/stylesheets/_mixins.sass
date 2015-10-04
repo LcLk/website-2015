@@ -5,8 +5,7 @@
   font-family: $font
   color: #000
 
-
-=reset_link()
+=reset_link
   &:visited
     @include _reset_link
   &:active
@@ -16,3 +15,16 @@
   &:link
     @include _reset_link
 
+=pulse-animation()
+  z-index: -1
+  content: ''
+  position: absolute
+  animation: pulse 1s infinite
+
+@keyframes pulse
+  0%
+    transform: scale(1)
+    opacity: 1
+  100%
+    transform: scale(1.3)
+    opacity: 0

@@ -1,0 +1,38 @@
+=leaf
+  width: 100px
+  height: 1em
+  padding: 10px
+  border-radius: 50px 10px
+  line-height: 1em
+  font-size: 1.5em
+  // style
+  color: white
+  background-color: $green
+  cursor: pointer
+  // text positioning
+  text-align: center
+  font-weight: bold
+  // shape
+  border: 6px solid white
+
+
+#menu-container
+  // positioning
+  position: fixed
+  top: 50px
+  right: 10px
+  .menu-button-container
+    z-index: 100
+    .menu-button
+      +leaf
+      transition: all 0.5s
+    &:hover:before
+      +leaf
+      +pulse-animation
+      background-color: white
+  &:.open
+    .menu-button-container
+      .menu-button
+      border-radius: 0 0
+
+      
